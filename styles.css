@@ -1,7 +1,17 @@
+:root {
+  font-size: 10px;
+  --main-color: #d3ad7f;
+  --black: #131313;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", serif;
 }
 
 .caixa-video {
@@ -36,11 +46,91 @@
   );
 }
 
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
 .header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
-  background-color: #000;
-  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  background-color: var(--bg);
+  border-bottom: var(--border);
+  width: 100vw;
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.header section a img {
+  height: 6rem;
+}
+
+.header section nav a {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: #fff;
+  transition: 0.4s linear;
+}
+
+.header section nav a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.caixa-principal {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.caixa-principal div {
+  max-width: 60rem;
+}
+
+.caixa-principal div h3 {
+  color: #fff;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.caixa-principal div p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: lighter;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.caixa-principal div a {
+  background-color: var(--main-color);
+  cursor: pointer;
+  margin-top: 2rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 1rem 3rem;
+  border: none;
+  transition: 0.3s linear;
+}
+
+.caixa-principal div a:hover {
+  letter-spacing: 0.1rem;
+}
+
+.caixa-sobre h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
 }
