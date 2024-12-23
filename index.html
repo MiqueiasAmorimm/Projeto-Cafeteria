@@ -11,11 +11,18 @@
       rel="stylesheet"
     />
     <title>Loop Coffee - O melhor café para programadores</title>
-    "
   </head>
   <body>
     <div class="caixa-video">
       <video src="./videos/espresso.mp4" loop muted autoplay></video>
+      <video
+        id="background-video"
+        src="./videos/espresso.mp4"
+        loop
+        muted
+        autoplay
+      ></video>
+
       <div class="mascara"></div>
     </div>
 
@@ -24,16 +31,16 @@
         <a href="#">
           <img src="./img/logocoffe.png" alt="Logo da cafeteria Loop Coffee" />
         </a>
-
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Sobre</a>
-          <a href="#">Endereço</a>
+          <a href="#home">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#ambiente">Nosso Ambiente</a>
         </nav>
       </section>
     </header>
 
-    <section class="caixa-principal">
+    <!-- Seção Home com ID -->
+    <section id="home" class="caixa-principal">
       <div>
         <h3>Code com o melhor café do Brasil</h3>
         <p>
@@ -41,25 +48,83 @@
           espaço único, onde você pode trabalhar, estudar ou simplesmente
           relaxar enquanto aprecia o melhor café artesanal do Brasil.
         </p>
-        <a href="#">Pegue o seu agora</a>
+        <a class="botao-link">Pegue o seu agora</a>
       </div>
     </section>
 
-    <section class="caixa-sobre">
-      <h2><span>Sobre</span> Nós</h2>
-      <div class="sobre-imagem">
-        <img src="./img/coffe1.jpeg" alt="Café especial sendo preparado" />
-      </div>
-      <div class="sobre-texto">
-        <h3>O que faz nosso café especial</h3>
-        <p>
-          Nossos grãos são cuidadosamente selecionados e torrados artesanalmente
-          para garantir um sabor único e inesquecível. Cada xícara é preparada
-          com dedicação e excelência, proporcionando a energia e o conforto que
-          você merece.
-        </p>
-        <a>Saiba mais</a>
+    <!-- Seção Sobre com ID -->
+    <section id="sobre" class="caixa-sobre">
+      <h2 class="titulo"><span>Sobre</span> Nós</h2>
+      <div class="sobre-container">
+        <div class="sobre-imagem">
+          <img src="./img/coffee1.jpg" alt="Café especial sendo preparado" />
+        </div>
+        <div class="sobre-texto">
+          <h3>O que faz nosso café especial</h3>
+          <p>
+            Nossos grãos são cuidadosamente selecionados e torrados
+            artesanalmente para garantir um sabor único e inesquecível. Cada
+            xícara é preparada com dedicação e excelência, proporcionando a
+            energia e o conforto que você merece.
+          </p>
+          <p>
+            Nossa história começou em um pequeno espaço com recursos limitados.
+            Apesar dos desafios, acreditamos na paixão pelo café e na força do
+            trabalho duro. Enfrentamos obstáculos, mas nunca desistimos. Hoje,
+            colhemos os frutos de nossa dedicação, oferecendo a você não apenas
+            café, mas o resultado de um sonho que se tornou realidade. Cada
+            xícara conta a história de superação, determinação e amor pelo que
+            fazemos.
+          </p>
+          <p>
+            Acreditamos que cada momento ao saborear nosso café é uma
+            experiência única, que traz consigo a essência do nosso compromisso
+            com a qualidade e o amor pelo que fazemos. Cada xícara reflete nossa
+            jornada e o cuidado que temos em oferecer o melhor para nossos
+            clientes.
+          </p>
+        </div>
       </div>
     </section>
+
+    <!-- Seção Nosso Ambiente com ID -->
+    <section id="ambiente" class="caixa-ambiente">
+      <h2 class="titulo"><span>Nosso</span> Ambiente</h2>
+      <div class="sobre-container">
+        <div class="sobre-imagem">
+          <img
+            src="./img/nossoambiente.jpg"
+            alt="Ambiente aconchegante do café"
+          />
+        </div>
+        <div class="sobre-texto">
+          <h3>Um espaço acolhedor para você</h3>
+          <p>
+            Nosso ambiente foi pensado para proporcionar conforto e
+            tranquilidade a cada visitante. Cada detalhe, desde a decoração até
+            a disposição dos móveis, é pensado para criar uma atmosfera
+            acolhedora, ideal para relaxar, trabalhar ou desfrutar de uma boa
+            conversa.
+          </p>
+          <p>
+            Quando decidimos abrir nossas portas, sabíamos que não seria apenas
+            o café que oferecemos que conquistaria nossos clientes, mas também o
+            espaço onde todos se sentiriam em casa. Queremos que cada xícara
+            seja uma oportunidade para você desacelerar e aproveitar o melhor da
+            vida, rodeado de um ambiente confortável e inspirador.
+          </p>
+          <p>
+            Nossa missão é criar uma experiência completa, onde o sabor do café
+            e o conforto do ambiente se unem para proporcionar momentos de
+            prazer e aconchego. Esperamos que cada visita ao nosso café seja
+            única e que você se sinta sempre bem-vindo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <a class="botao-link">Saiba mais</a>
+
+    <script src="./index.js"></script>
   </body>
 </html>
